@@ -1,3 +1,109 @@
-h1{
-    color: red;
+.container-fluid{
+    padding: 0;
 }
+
+/*Barra de navegação*/
+
+.navbar{
+    border-bottom: 1px solid rgb(104, 95, 95);
+    margin-bottom: 20px;
+}
+
+.navbar-nav{
+    margin:auto;
+}
+
+.navbar-brand{
+    font-weight: bold;
+}
+
+footer{
+    background-color: #333;
+    height: 300px;
+    border-top: 2px solid #202020;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    top:50%;
+    position: relative;
+}
+
+/*Botao de adicionar*/
+.add-div{
+    background-color:rgb(4, 139, 49);
+    cursor: pointer;
+    display: inline-block;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+.fas.fa-add{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+/* Contêiner do campo de pesquisa */
+.search-div{
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative; /* Necessário para posicionar o ícone relativo ao contêiner */
+}
+
+/* Campo de entrada */
+.search-div input {
+    padding-right: 35px; /* Espaço para o ícone dentro do campo */
+}
+
+/* Ícone de pesquisa */
+.search-div .fas.fa-search {
+    position: absolute;
+    right: 20px; /* Distância do lado direito do input */
+    top: 50%; /* Alinhamento vertical */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    color: #aaa; /* Cor do ícone */
+    cursor: pointer; /* Ícone clicável */
+}
+
+
+
+/*Tarefas*/
+
+.list-dev{
+    padding: 0;
+}
+
+.task-list{
+    padding-left: 0;
+}
+
+.task-item{
+    list-style: none;
+    font-size:20px;
+    height: 50px;
+    border:1px dashed #ccc;
+}
+
+.fas.fa-trash, .fas.fa-edit{
+    cursor: pointer;
+    padding: 10px;
+    margin:5px;
+    color:white;
+    float: right;
+}
+
+.fas.fa-trash{
+    background-color: rgb(182, 6, 6);    
+}
+
+.fas.fa-edit{
+    background-color: rgb(196, 130, 9);
+}
+
