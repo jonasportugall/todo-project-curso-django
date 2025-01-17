@@ -32,8 +32,10 @@ def newTask(request):
         form = TaskForm()
         return render(request , 'tasks/addTask.html',{'form':form})
 
-def deleteTask(request):
-    return false
+def deleteTask(request, id):
+    task = get_object_or_404(Task, pk=id)
+    task.delete()
+    return redirect('/')
 
 def editTask(request, id):
     task = get_object_or_404(Task, pk=id)
