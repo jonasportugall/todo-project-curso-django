@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Lista de tarefas{% endblock %}
+
+
+{% block content %}
+
+    <div class="container-fluid">
+        <table>
+            <thead>
+                <th>#</th>
+                <th>Titulo</th>
+                <th>Descricao</th>
+            </thead>
+            <tbody>
+                <td>{{ task.id }}</td>
+                <td>{{ task.title }}</td>
+                <td>{{ task.description }}</td>
+            </tbody>
+        </table>
+    </div>
+    
+{% endblock %}
